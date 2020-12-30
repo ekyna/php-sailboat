@@ -1,0 +1,24 @@
+login:
+    path: /login
+    controller: App\Controller\LoginController::login
+    methods: [POST]
+
+boat_index:
+    path: /boat
+    controller: App\Controller\BoatController::index
+    methods: [GET]
+
+boat_post:
+    path: /boat
+    controller: App\Controller\BoatController::post
+    methods: [POST]
+
+boat_get:
+    path: /boat/{boatId}
+    controller: App\Controller\BoatController::get
+    methods: [GET]
+
+boat_patch:
+    path: /boat/{boatId}
+    controller: App\Controller\BoatController::patch
+    methods: [PATCH]
